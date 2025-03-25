@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Search</title>
     <link rel="stylesheet" href="index.CSS"></link>
 </head>
 <body>
-    <input type="text" id = "movie"/>
-    <button onclick="search()">Search</button>
-    <img src ="" id ="poster"/>
-    <span>Rating</span>
-    <span id="rate">...</span>
+    <header>
+        <h1>FILM SEARCHING</h1>
+        <div class="search-box">
+            <input type="text" id="movie" placeholder="Search for a movie...">
+            <button onclick="search()">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="movie-container">
+            <img src="C:\Users\15126\OneDrive\Desktop\SKYREX\movieimage.PNG" id="poster" class="poster" alt="Movie Poster">
+
+            <div class="movie-info">
+                <h2 id="title">Movie Title</h2>
+                <p><strong>Rating:</strong> <span id="rate">N/A</span></p>
+                <div id="movie-details"></div>
+            </div>
+        </div>
+    </main>
+
 
 </body>
 <script src="index.js"></script>
