@@ -19,6 +19,8 @@ function search(){
     htmlRequest.send()
 
     htmlRequest.onload = function(){
+        let movieData = htmlRequest.response;
+
 
         console.log(htmlRequest.response)
 
@@ -27,5 +29,8 @@ function search(){
 
         let rateTag = document.getElementById("rate")
         rateTag.innerHTML = htmlRequest.response.imdbRating
+
+        let detailsContainer = document.getElementById("movie-details"); // Assuming you have a div with id="movie-details"
+        detailsContainer.innerHTML = "";
     }
 }
