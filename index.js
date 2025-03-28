@@ -59,5 +59,15 @@ function search(){
         createDetailElement("imdbID", movieData.imdbID);
         createDetailElement("imdbVotes", movieData.imdbVotes);
 
+
+         if (movieData.Ratings && movieData.Ratings.length > 0) {
+            let ratingsList = "<ul>";
+            movieData.Ratings.forEach(rating => {
+                ratingsList += `<li><strong>${rating.Source}:</strong> ${rating.Value}</li>`;
+            });
+            ratingsList += "</ul>";
+            createDetailElement("Ratings", ratingsList);
+        }
+
     }
 }
