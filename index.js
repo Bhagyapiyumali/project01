@@ -32,5 +32,11 @@ function search(){
 
         let detailsContainer = document.getElementById("movie-details"); // Assuming you have a div with id="movie-details"
         detailsContainer.innerHTML = "";
+
+        function createDetailElement(label, value) {
+            let detailElement = document.createElement("p");
+            detailElement.innerHTML = `<strong>${label}:</strong> ${value}`;
+            detailsContainer.appendChild(detailElement);
+        }
     }
 }
