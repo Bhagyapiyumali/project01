@@ -38,5 +38,26 @@ function search(){
             detailElement.innerHTML = `<strong>${label}:</strong> ${value}`;
             detailsContainer.appendChild(detailElement);
         }
+
+        createDetailElement("Title", movieData.Title);
+        createDetailElement("Year", movieData.Year);
+        createDetailElement("Rated", movieData.Rated);
+        createDetailElement("Runtime", movieData.Runtime);
+        createDetailElement("Actors", movieData.Actors);
+        createDetailElement("Awards", movieData.Awards);
+        createDetailElement("Box Office", movieData.BoxOffice);
+        createDetailElement("Country", movieData.Country);
+        createDetailElement("Director", movieData.Director);
+        createDetailElement("Genre", movieData.Genre);
+        createDetailElement("Language", movieData.Language);
+        createDetailElement("Metascore", movieData.Metascore);
+        createDetailElement("Plot", movieData.Plot);
+        createDetailElement("Production", movieData.Production);
+        createDetailElement("Released", movieData.Released);
+        createDetailElement("Website", movieData.Website);
+        createDetailElement("Writer", movieData.Writer);
+        createDetailElement("imdbID", movieData.imdbID);
+        createDetailElement("imdbVotes", movieData.imdbVotes);
+
     }
 }
